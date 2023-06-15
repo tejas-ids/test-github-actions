@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          tags: ${secrets.DOCKER_REPOSITORY}:${{ github.event.release.tag_name }}
+          tags: ${{ secrets.DOCKER_REPOSITORY }}:${{ github.event.release.tag_name }}
